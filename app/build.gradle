@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion Versions.androidCompileSdk
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.raka.qtest"
+        minSdkVersion Versions.androidMinSdk
+        targetSdkVersion Versions.androidTargetSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation AppDependencies.appCompat
+    implementation AppDependencies.core
+    implementation AppDependencies.constraintLayout
+    //recycler-view
+    implementation AppDependencies.design
+    implementation AppDependencies.recyclerView
+    //Dagger 2
+    api AppDependencies.daggerAndroid
+    kapt AppDependencies.daggerCompiler
+    api AppDependencies.daggerAndroidSupport
+    annotationProcessor AppDependencies.daggerProcessor
+    //Retrofit
+    implementation AppDependencies.retrofit2
+    implementation AppDependencies.converterGson
+    implementation AppDependencies.okhttp
+    //rxJava
+    implementation AppDependencies.rxJava
+    implementation AppDependencies.rxAndroid
+    implementation AppDependencies.adapterRxJava
+    //glide
+    implementation AppDependencies.glide
+    implementation AppDependencies.legacySupportV4
+    annotationProcessor AppDependencies.glideCompiler
+    //room
+    implementation AppDependencies.roomRuntime
+    kapt AppDependencies.roomCompiler
+    implementation AppDependencies.roomRxJava2
+    implementation AppDependencies.gson
+    implementation AppDependencies.roomKtx
+    //coroutine
+    implementation AppDependencies.coroutineCore
+    implementation AppDependencies.coroutineAndroid
+    testImplementation TestDependencies.jUnit
+    androidTestImplementation TestDependencies.runner
+    androidTestImplementation TestDependencies.espressoCore
+    testImplementation TestDependencies.mockito
+    androidTestImplementation TestDependencies.mockito
+    testImplementation TestDependencies.mockWebServer
+    androidTestImplementation TestDependencies.mockWebServer
+    androidTestImplementation TestDependencies.rule
+    androidTestImplementation TestDependencies.truth
+    androidTestImplementation TestDependencies.junitExt
+}
