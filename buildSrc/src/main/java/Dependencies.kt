@@ -30,6 +30,9 @@ object Versions{
     const val roomKtx = "2.2.3"
     const val coroutineCore = "1.3.2"
     const val coroutineAndroid = "1.3.2"
+    const val firebaseCore = "17.2.2"
+    const val firebaseAuth = "19.2.0"
+    const val playServiceAuth = "17.0.0"
 }
 
 object AppDependencies{
@@ -58,6 +61,9 @@ object AppDependencies{
     const val roomKtx = "androidx.room:room-ktx:${Versions.roomKtx}"
     const val coroutineCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutineCore}"
     const val coroutineAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutineAndroid}"
+    const val firebaseCore = "com.google.firebase:firebase-core:${Versions.firebaseCore}"
+    const val firebaseAuth = "com.google.firebase:firebase-auth:${Versions.firebaseAuth}"
+    const val playServiceAuth = "com.google.android.gms:play-services-auth:${Versions.playServiceAuth}"
 }
 
 object TestDependencies{

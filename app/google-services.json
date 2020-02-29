@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "334548647127",
+    "firebase_url": "https://qshop-8f913.firebaseio.com",
+    "project_id": "qshop-8f913",
+    "storage_bucket": "qshop-8f913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334548647127:android:c55542a528a524b4bb0492",
+        "android_client_info": {
+          "package_name": "com.raka.qtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334548647127-i3r3lihgrkb57gcp4j0to34h1g83gvla.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raka.qtest",
+            "certificate_hash": "6dc66f2d71cc657349bca5935edf089ab134c9d6"
+          }
+        },
+        {
+          "client_id": "334548647127-nho7ui6nrcinqar36m6j2o4dg39okohk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSqluKGSAgNvS17yfjnOH-ZGY8dd7qSU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334548647127-nho7ui6nrcinqar36m6j2o4dg39okohk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
