@@ -2,8 +2,9 @@
     <string name="app_name">QTest</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
@@ -11,5 +12,7 @@
     <string name="username">Username</string>
     <string name="google_signin_failed">Google Sign in failed</string>
     <string name="sign_in_with_google">Sign In with Google</string>
-    <string name="client_id">334548647127-i3r3lihgrkb57gcp4j0to34h1g83gvla.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">233803317648897</string>
+    <string name="fb_login_protocol_scheme">fb233803317648897</string>
+    <string name="client_id">334548647127-h3btt8nqjebnobeentau4ptkqh5mbste.apps.googleusercontent.com</string>
 </resources>

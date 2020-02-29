@@ -8,7 +8,7 @@ import java.lang.ref.WeakReference
 
 class LoginRouter(private val activityRef: WeakReference<Activity>) {
     enum class Route{
-        HOME_SCREEN
+        HOME_SCREEN,
     }
 
     fun navigate(route:Route){
@@ -20,4 +20,5 @@ class LoginRouter(private val activityRef: WeakReference<Activity>) {
     private fun toNextScreen(clazz: Class<*>){
         activityRef.get()?.startActivity(Intent(activityRef.get(),clazz))
     }
+
 }

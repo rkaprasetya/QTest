@@ -79,6 +79,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/btn_login_google_margin_start_end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="@dimen/btn_login_google_margin_start_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login_facebook" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_login_facebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/btn_login_google_margin_start_end"
         android:layout_marginTop="@dimen/btn_login_google_margin_start_top"
         android:layout_marginEnd="@dimen/btn_login_google_margin_start_end"
         app:layout_constraintEnd_toEndOf="parent"

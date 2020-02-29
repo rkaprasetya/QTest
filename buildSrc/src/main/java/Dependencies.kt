@@ -1,4 +1,4 @@
-object Versions{
+object Versions {
     const val androidCompileSdk = 29
     const val androidMinSdk = 24
     const val androidTargetSdk = 29
@@ -33,12 +33,21 @@ object Versions{
     const val firebaseCore = "17.2.2"
     const val firebaseAuth = "19.2.0"
     const val playServiceAuth = "17.0.0"
+    const val facebookSdk = "[5,6)"
+    const val material = "1.1.0"
+    const val navigationFragment = "2.0.0"
+    const val navigationUi = "2.0.0"
+    const val lifeCycleExt = "2.0.0"
+    const val navigationFragmentKtx = "2.0.0"
+    const val navigationUiKtx = "2.0.0"
 }
 
-object AppDependencies{
+
+object AppDependencies {
     const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
     const val core = "androidx.core:core-ktx:${Versions.core}"
-    const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+    const val constraintLayout =
+        "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val design = "com.android.support:design:${Versions.design}"
     const val recyclerView = "com.android.support:recyclerview-v7:${Versions.recylerView}"
     const val daggerAndroid = "com.google.dagger:dagger-android:${Versions.dagger}"
@@ -59,17 +68,29 @@ object AppDependencies{
     const val roomRxJava2 = "androidx.room:room-rxjava2:${Versions.roomRxJava2}"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
     const val roomKtx = "androidx.room:room-ktx:${Versions.roomKtx}"
-    const val coroutineCore = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutineCore}"
-    const val coroutineAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutineAndroid}"
+    const val coroutineCore =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutineCore}"
+    const val coroutineAndroid =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutineAndroid}"
     const val firebaseCore = "com.google.firebase:firebase-core:${Versions.firebaseCore}"
     const val firebaseAuth = "com.google.firebase:firebase-auth:${Versions.firebaseAuth}"
-    const val playServiceAuth = "com.google.android.gms:play-services-auth:${Versions.playServiceAuth}"
+    const val playServiceAuth =
+        "com.google.android.gms:play-services-auth:${Versions.playServiceAuth}"
+    const val facebookSdk = "com.facebook.android:facebook-android-sdk:${Versions.facebookSdk}"
+    const val material = "com.google.android.material:material:${Versions.material}"
+    const val navigationFragment =
+        "androidx.navigation:navigation-fragment:${Versions.navigationFragment}"
+    const val navigationUi = "androidx.navigation:navigation-ui:${Versions.navigationUi}"
+    const val lifecycleExt = "androidx.lifecycle:lifecycle-extensions:${Versions.lifeCycleExt}"
+    const val navigationFragmentKtx =
+        "androidx.navigation:navigation-fragment-ktx: ${Versions.navigationFragmentKtx}"
+    const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navigationUiKtx}"
 }
 
-object TestDependencies{
+object TestDependencies {
     const val jUnit = "junit:junit:${Versions.jUnit}"
     const val runner = "androidx.test:runner:${Versions.runner}"
-    const val espressoCore= "androidx.test.espresso:espresso-core:${Versions.espresso}"
+    const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espresso}"
     const val mockito = "org.mockito:mockito-core:${Versions.mockito}:"
     const val rule = "androidx.test:rules:${Versions.runner}"
     const val truth = "androidx.test.ext:truth:${Versions.runner}"
