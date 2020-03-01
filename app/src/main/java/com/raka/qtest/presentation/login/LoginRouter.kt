@@ -20,5 +20,4 @@ class LoginRouter(private val activityRef: WeakReference<Activity>) {
     private fun toNextScreen(clazz: Class<*>){
         activityRef.get()?.startActivity(Intent(activityRef.get(),clazz))
     }
-
 }

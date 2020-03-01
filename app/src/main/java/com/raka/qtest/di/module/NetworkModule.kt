@@ -2,6 +2,7 @@ package com.raka.qtest.di.module
 
 import com.raka.qtest.data.api.ApiService
 import com.raka.qtest.di.scope.ApplicationScope
+import com.raka.qtest.di.scope.ScreenScope
 import com.raka.qtest.utilities.AppConfig
 import dagger.Module
 import dagger.Provides

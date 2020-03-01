@@ -46,8 +46,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setupFacebookLogin() {
-//        FacebookSdk.sdkInitialize(getApplicationContext())
-//        AppEventsLogger.activateApp(this)
         callbackManager = CallbackManager.Factory.create()
         btn_login_facebook.setPermissions(Arrays.asList("email","public_profile"))
         btn_login_facebook.registerCallback(callbackManager,object : FacebookCallback<LoginResult>{

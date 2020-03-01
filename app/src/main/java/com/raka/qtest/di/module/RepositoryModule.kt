@@ -5,19 +5,19 @@ import com.raka.qtest.data.db.AppDatabase
 import com.raka.qtest.data.mapper.CategoryMapper
 import com.raka.qtest.data.mapper.ProductMapper
 import com.raka.qtest.data.repository.ShopRepositoryImpl
+import com.raka.qtest.domain.repository.ShopRepository
 import dagger.Module
 import dagger.Provides
-import javax.inject.Singleton
 
 @Module
 class RepositoryModule {
 
     @Provides
-    @Singleton
-    fun providesShopRepository(shopApi: ShopApi,
-                               productMapper: ProductMapper,
-                               categoryMapper: CategoryMapper,
-                               appDatabase: AppDatabase
-    ) =
-        ShopRepositoryImpl(shopApi,productMapper,categoryMapper, appDatabase)
+    fun providesShopRepository(
+        shopApi: ShopApi,
+        productMapper: ProductMapper,
+        categoryMapper: CategoryMapper,
+        appDatabase: AppDatabase
+    ): ShopRepository =
+            ShopRepositoryImpl(shopApi, productMapper, categoryMapper, appDatabase)
 }

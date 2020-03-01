@@ -15,4 +15,15 @@
     <dimen name="btn_login_signin_margin_end">50dp</dimen>
     <dimen name="btn_login_google_margin_start_end">70dp</dimen>
     <dimen name="btn_login_google_margin_start_top">39dp</dimen>
+    <dimen name="iv_item_product_like_size">30dp</dimen>
+    <dimen name="iv_item_product_like_margin_start_bottom">10dp</dimen>
+    <dimen name="cv_item_product_height">130dp</dimen>
+    <dimen name="iv_item_category_size">60dp</dimen>
+    <dimen name="iv_fr_home_like_size">30dp</dimen>
+    <dimen name="tv_fr_home_search_height">30dp</dimen>
+    <dimen name="tv_fr_home_search_margin_top">16dp</dimen>
+    <dimen name="tv_fr_home_search_margin_start">10dp</dimen>
+    <dimen name="tv_fr_home_search_margin_end">20dp</dimen>
+    <dimen name="tv_fr_home_search_text_size">16sp</dimen>
+    <dimen name="iv_fr_home_like_margin_start_top">16dp</dimen>
 </resources>

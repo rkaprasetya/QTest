@@ -30,4 +30,10 @@ interface ParametersDao {
 
     @Query("SELECT * from ProductPromo where id=:idProduct")
     fun getProductById(idProduct:String): Single<ProductPromoLocal>
+
+    @Query("UPDATE ProductPromo SET loved=:liked WHERE id=:idProduct")
+    suspend fun updateLikedProduct(liked:Int,idProduct:String)
+
+    @Query("SELECT * from ProductPromo")
+    fun getProductList():Single<List<ProductPromoLocal>>
 }
